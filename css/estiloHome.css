@@ -1,0 +1,80 @@
+body{
+    height: 100vh;
+}
+
+main{
+    padding: 5% !important;
+}
+
+main div.imagemHome{
+    max-width: 980px;
+    height: 58vh;
+    margin: auto;
+    position: relative;
+}
+
+main div.imagemHome:hover{
+    display: block;
+}
+
+main div.imagemHome img.imgSlide{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+
+
+main div.imagemHome div.slideshow{
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%,0%);
+    color: #fff;
+    font-size: 18px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    padding: 0.01em 16px;
+} 
+
+main div.imagemHome div.slideshow:after,.slideshow:before{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+main div.imagemHome div.slideshow div.esquerda{
+    float: left;
+    cursor: pointer;
+}
+
+main div.imagemHome div.slideshow div.direita{
+    float: right;
+    cursor: pointer;
+}
+
+main div.imagemHome div.slideshow span.indicaImg{
+    margin-top: 20%;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    padding: 0;
+}
+
+main div.imagemHome div.slideshow span.indicaImg:hover{
+    color:#000;
+    background-color:#fff;
+}
+
+.white{
+    color:#000;
+    background-color:#fff;
+}
